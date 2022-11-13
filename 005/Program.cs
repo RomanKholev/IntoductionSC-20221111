@@ -14,4 +14,4 @@ if (max < c)
 {
     max = c;
 }
-System.Console.WriteLine($"{max} является иаксимальным");
+System.Console.WriteLine($"{max} является максимальным");

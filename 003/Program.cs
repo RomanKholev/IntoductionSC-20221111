@@ -8,4 +8,4 @@ if (max < b)
 {
     max = b;
 }
-System.Console.WriteLine($"{max} является иаксимальным");
+System.Console.WriteLine($"{max} является максимальным");

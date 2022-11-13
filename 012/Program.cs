@@ -8,4 +8,4 @@ if (max < num2)
 {
     max = num2;
 } 
-System.Console.WriteLine($"Наиборльшая цифра: {max}");
+System.Console.WriteLine($"Наибольшая цифра: {max}");

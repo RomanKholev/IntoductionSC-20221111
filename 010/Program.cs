@@ -2,4 +2,4 @@
 System.Console.Write("Введите число: ");
 int a=Convert.ToInt32(Console.ReadLine());
 int b = (a%10);
-System.Console.Write($"Последняя цывра числа: {a} - {b}");
+System.Console.Write($"Последняя цыфра числа: {a} - {b}");
