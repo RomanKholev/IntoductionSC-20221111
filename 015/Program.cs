@@ -1,26 +1,23 @@
-﻿// С клавиатуры вводится целое число. Вывести третью цифру числа или сообщить, что её нет (Вывести: NO).
-System.Console.Write("Введите число: ");
-int a=Convert.ToInt32(Console.ReadLine());
-/*int b = (a/100%10);
-if (a<100)
-{
-    System.Console.Write("NO");
-}
-else
-{
-System.Console.Write($"Третья цыфра числа: {a} - {b}");
-}
+﻿//15. С клавиатуры вводится целое число. Вывести третью цифру числа или сообщить, что её нет 
+//(Вывести: NO).
+int n=Convert.ToInt32(Console.ReadLine());
+n=System.Math.Abs(n);
+//Вариант 1 - простой
+/*if (n<100) System.Console.WriteLine("No");
+else System.Console.WriteLine(n/100%10);
+//4565654656/100%3
 */
-//Вариант 2
-if (a>99)
+
+//Вариант 2 - 12345678 - 3
+if (n>99)
 {
-    wheil (a>1000)
+    while (n>1000)
     {
-        a=a/10;
+        n=n/10;
     }
-System.Console.WriteLine(a%10);
+    System.Console.WriteLine(n%10);
 }
 else
 {
- System.Console.WriteLine("NO");
+    System.Console.WriteLine("NO");
 }
