@@ -4,7 +4,8 @@ double a=Convert.ToDouble(Console.ReadLine());
 System.Console.WriteLine("Введите число b:");
 double b=Convert.ToDouble(Console.ReadLine());
 double multiplicity = a / b;
-if (multiplicity%1 == 0) 
+System.Console.WriteLine(multiplicity);
+if (multiplicity%1 == 0)
 {
    System.Console.Write("Число a кратно числу b:"); 
 }
