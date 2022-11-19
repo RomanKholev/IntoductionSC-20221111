@@ -5,9 +5,9 @@ double Square (int a)
 {
   return a=a*a;
 }
-
+System.Console.WriteLine("Число|  Квадрат");
 for(int i=1;i<n+1;i++)
 {
-    System.Console.WriteLine($"{i}^2={Square(i)}");
+    System.Console.WriteLine($"{i,5}|{Square(i),8}");
     
 }
