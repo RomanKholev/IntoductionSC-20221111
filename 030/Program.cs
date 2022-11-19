@@ -1,7 +1,8 @@
 ﻿// Написать программу вычисления произведения чисел от 1 до N
 double ProductOfNumbers(int a)
 {
-    double product=1;
+    double product;
+    if (a==0) product=0; else product=1;
 for (int i=1;i<=a;i++)
 {
    product=product*i; 
