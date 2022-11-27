@@ -1,18 +1,32 @@
-﻿// Перевод 10 в двоичную
-int n=123;
-string DecToBin(int n)
+﻿// С клавиатуры вводится число N. Затем вводятся N чисел. Определить сколько чисел больше 0 введено с клавиатуры
+
+int[] IntArray(int N=10)
 {
-   string s="";
-wheil(n!=0)
+    System.Console.WriteLine($"Введите {N} чисел");
+    int[] a=new int[N];
+        for(int i=0;i<N;i++)
+        a[i]=Convert.ToInt32(Console.ReadLine());
+        return a;
+   }
+
+void Print(int[] a)
 {
-    s=Convert.ToString(n%2);
-    n/=2;
-} 
+    for(int i=0;i<a.Length;i++)
+        System.Console.Write($"{a[i],5}");
 }
-string s="";
-wheil(n!=0)
+
+int Count(int [] a)
 {
-    s=Convert.ToString(n%2);
-    n/=2;
+    int count=0;
+    for(int i=0;i<a.Length;i++)
+        if(a[i]>0) count++;
+    return count;
 }
-System.Console,WriteLine(s);
+
+int N;
+System.Console.WriteLine("Введите число N");
+N=System.Convert.ToInt32(System.Console.ReadLine());
+int[] a=IntArray(N);
+Print(a);
+System.Console.WriteLine();
+System.Console.WriteLine($"Чисел больше 0 с клавиатуры введено: {Count(a)}");
