@@ -49,13 +49,19 @@ void PrintPoint(double[] a)
         count++;
         }
 }
-
 System.Console.WriteLine("Введите количество точек фигуры: ");
 int N=Convert.ToInt32(System.Console.ReadLine()); 
 System.Console.WriteLine("Введите коэффициент масштабирования: ");
-double K=Convert.ToDouble(System.Console.ReadLine());   
+double K=Convert.ToDouble(System.Console.ReadLine());    
+while (K==0)
+{
+System.Console.WriteLine("Введите коэффициент масштабирования отличный от 0: ");
+K=Convert.ToDouble(System.Console.ReadLine());    
+}
+  
 double [] a=Coordinats(N);
-System.Console.WriteLine("Координаты исхожной фигуры: ");
+System.Console.WriteLine("Координаты точек исхожной фигуры: ");
 PrintPoint(a);
-System.Console.WriteLine("Координаты фигуры после масштабирования: ");
-PrintPoint(Scale(a, 0.5));
+System.Console.WriteLine();
+System.Console.WriteLine("Координаты точек фигуры после масштабирования: ");
+PrintPoint(Scale(a, K));
