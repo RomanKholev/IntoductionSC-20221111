@@ -5,7 +5,7 @@ int[] RandomIntArray(int N,int min,int max)
     //Заполнили массив
     Random random=new Random();
     for(int i=0;i<a.Length;i++)
-        a[i]=random.Next(0,200);
+        a[i]=random.Next(0,21);
     return a;
 }
 
@@ -24,7 +24,7 @@ int BinSearch(int[] a,int find)
     while(a[i]!=find && left<right)
     {
           if (find>a[i])  
-              left=i;
+              left=i+1;
           else
             right=i;
         i=left+(right-left)/2;

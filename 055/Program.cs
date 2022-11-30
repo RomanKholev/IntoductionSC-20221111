@@ -65,3 +65,28 @@ PrintPoint(a);
 System.Console.WriteLine();
 System.Console.WriteLine("Координаты точек фигуры после масштабирования: ");
 PrintPoint(Scale(a, K));
+
+/*class Program
+{
+
+struct Point
+{
+    public  double x,y;
+}
+static void Main()
+{
+    Poin a,b;
+    a.x=0
+    a.y=0
+    b.x=1
+    b.y=1
+}
+
+
+Point a,b;
+
+}
+
+
+
+*/
