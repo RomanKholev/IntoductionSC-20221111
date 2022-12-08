@@ -6,4 +6,4 @@ int k=0;
 //     if (char.IsDigit(s[i])) k++;
 foreach(char c in s)
     if (char.IsDigit(c)) k++;
-System.Console.WriteLine(k);   
+System.Console.WriteLine(k);    
